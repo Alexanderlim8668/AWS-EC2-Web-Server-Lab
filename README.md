@@ -94,12 +94,3 @@ flowchart LR
 
 
 
-```mermaid
-graph TD
-    A[Internet] --> B[EC2 Instance]
-    B --> C[Security Group]
-    C --> D[Allow HTTP Port 80]
-    B --> E[EBS Volume]
-    B --> F[User Data Script]
-    F --> G[Install Apache]
-    F --> H[Create Web Page]
